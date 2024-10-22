@@ -1,0 +1,234 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #2a2a2a, #6b6b6b, #949494);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    box-shadow: 1px 1px 10px rgba(0, 255, 255, 0.472);
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.nav-list-item {
+    margin: 0 15px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0px 20px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: aqua;
+}
+
+.login-button button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: 1px solid black;
+    background-color: rgb(0, 238, 238);
+
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.login-button a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+#burg-mobile, .button {
+    display: none;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.main-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    background-color: rgb(152, 152, 152);
+    max-width: 950px;
+    width: 100%;
+    height: 370px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.674);
+    box-shadow: 1px 1px 5px 2px black;
+
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+.main-content .form-login {
+    display: block;
+    margin-left: 40px;
+    outline: 1px solid black;
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.556);
+}
+
+.main-content div.campo {
+    display: flex;
+    align-items: center;
+
+}
+
+.main-content div.campo span {
+    margin-bottom: 10px;
+    margin-right: 10px;
+    background-color: rgb(0, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    font-size: 1.6em;
+}
+
+.main-content .pre-login h1 {
+    color: white;
+    padding: 30px 35px 0;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+.main-content .pre-login #line {
+    width: 240px;
+    height: 2px;
+    border-radius: 10px;
+    margin-left: 36px;
+    background-color: rgb(0, 234, 255);
+}
+
+.main-content .pre-login h3 {
+    color: white;
+    padding: 5px 40px 20px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.585);
+
+}
+
+.main-content .pre-login p {
+    color: white;
+    padding: 0px 40px 30px;
+    width: 50%;
+    text-align: left;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.548);
+}
+
+.main-content .imagem {
+    background-image: url(../img/anime.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 45%;
+    height: 377px;
+    float: right;
+    display: block;
+
+}
+
+div.campo input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+
+    padding: 5px;
+    margin-bottom: 10px;
+    outline: 1px solid black;
+
+}
+
+.form-login button {
+    border: none;
+    outline: none;
+    background-color: rgb(0, 238, 238);
+    border: 1px solid black;
+
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-login a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
+    outline: 1px solid rgb(255, 255, 255);    
+
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.form-login a:hover {
+    background-color: #858585bc;
+}
+
+footer {
+    position: fixed;
+    bottom:0;
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    height: 16px;
+    text-align: center;
+    color: rgb(147, 147, 147);
+}
+
+footer span {
+    color: aqua;
+    text-align: center;
+}
+
+

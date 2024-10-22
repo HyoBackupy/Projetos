@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --back_login_color: #080A23;
+    --font_color: white;
+    --font_family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --input_color: rgba(255, 255, 255, 0.704);
+
+/* Background Degrade Colors */
+
+    --cor_01: #846473;
+    --cor_02: #161A48;
+    --cor_03: #322E53;
+
+/* Button Degrade Colors */
+
+    --btn_01: #E5888B;
+    --btn_02: #955390;
+    --btn_03: #3A2E93;
+}
+
+body {
+    background-image: linear-gradient(to left bottom, var(--cor_01), var(--cor_02), var(--cor_03));
+    background-attachment: fixed;
+}
+
+/* Cabeçalho da Pagina */
+
+header {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--font_color);
+}
+
+/* Corpo Da Pagina / Login */
+
+main {
+    background-color: var(--back_login_color);
+    width: 480px;
+    height: 460px;
+    border-radius: 50px 5px;
+    box-shadow: 5px 15px 10px rgb(7, 7, 7);
+    margin: 8em auto 2em;
+}
+
+/* Cabeça Da Tela */
+
+picture > img {
+    width: 17%;
+    margin: -7% 42%;
+    text-align: center;
+    border-radius: 50%;
+}
+
+section#head {
+    color: var(--font_color);
+    font-family: var(--font_family);
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+}
+
+/* Usuario e Senha */
+
+section input#login, section input#senha{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    /*                      */
+    border-bottom: 1px solid var(--font_color);
+    color: var(--input_color);    
+    width: 100%;
+    padding-top: 1px;
+    padding-left: 1px;
+}
+
+input#login {
+    font-family: var(--font_family);
+}
+
+section#user, #pass {
+    color: var(--font_color);
+    margin: 30px 50px;
+}
+
+/*  Check_Box */
+
+section#check_box, #btn {
+    color: var(--font_color);
+    margin: 30px 50px 10px;
+}
+
+/*  Botao De Entrada */
+
+section > button {
+    border: none; /* Remove a Borda Padrão; */
+    background-image: linear-gradient(to left, var(--btn_01), var(--btn_02), var(--btn_03));
+    color: var(--font_color);
+    outline: 1px solid rgba(255, 0, 0, 0.374);
+    border-radius: 5px;
+    width: 100%;
+    height: 3em;
+    cursor: pointer;
+}
+
+button:hover{
+    outline: 1px groove rgb(140, 0, 255);
+    transition: ease-in-out 0.7s;
+}
+
+/* Botâo De Cadastro */
+
+section#cadastro {
+    color: var(--font_color);
+    text-align: center;
+}
+
+a#cad {
+    text-decoration: none;
+    color: var(--font_color);
+}
+
+a#cad:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+
+footer {
+    text-align: center;
+    color: var(--font_color);
+}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+@media screen and (max-width:992px) {
+    .main-content {
+        max-width: 810px;
+
+        transition: width 0.5s, height 0.5s;
+        transition-timing-function: ease;
+    }
+}
+
+@media screen and (max-width:840px) {
+    body {
+        background-image: none;
+        background-color: #525252;
+    }
+
+    .nav-bar {
+        padding: 1rem 2.75rem;
+    }
+
+    .nav-list, .login-button {
+        display: none;
+    }
+
+    #burg-mobile, .button {
+        display: block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        padding: 1px;
+        box-sizing: border-box;
+    }
+
+    #burg-mobile:hover {
+        outline: 1px solid rgba(255, 255, 255, 0.503);
+        background-color: black;
+        border-radius: 50%;
+    }
+
+    .menu-mobile ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu-mobile .nav-list-item {
+        display: block;
+        padding: 0.6rem;
+        border-radius: 15px;
+        margin-bottom: 5px;
+    }
+
+    .menu-mobile .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+
+    .menu-mobile .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+
+    .main-content {
+        width: 270px;
+        height: 500px;
+        margin-top: 25px;
+    }
+
+    .main-content .imagem {
+        display: none;
+    }
+
+    .form-login {
+        margin-left: 10px !important;
+    }
+
+    .pre-login h1 {
+        font-size: 24px !important;
+        padding: 20px 35px 0 !important;
+        text-align: center;
+    }
+    .pre-login #line {
+        display: none;
+    }
+
+    .pre-login h3 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .pre-login p {
+        display: none;
+    }
+
+    .pre-login .mobile-img {
+        background-image: url(../img/anime.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 230px;
+    }
+
+    /*    Conteudo      */
+
+    .form-login {
+        padding: 2px;
+        margin-top: -5px;
+    }
+
+    .form-login input {
+        display: block;
+        width: 85%;
+        height: 26px;
+        border-radius: 10px;
+    }
+
+    .form-login .submit-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .submit-form a , .submit-form button {
+        text-align: center;
+        padding-top: 7px;
+        width: 100%;
+        height: 29px;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+    .submit-form button:hover {
+        background-color: #00d1dc;
+    }
+
+    footer {
+        display: none;
+    }
+}
